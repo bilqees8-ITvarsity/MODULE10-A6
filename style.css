@@ -1,72 +1,58 @@
 body {
-    font-family: 'Poppins' , Arial, sans-serif;
-    background: linear-gradient(to right, #e3f2fd, #f8f9fa);
-    background-size: 400% 400%;
-    margin: 0;
-    padding: 40px;
-    text-align: center;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
 }
-@keyframes gradientMove {
-    0% { background-position: 0% 50%;}
-    50% { background-position: 100% 50%;}
-    100% { background-position: 0% 50%;}
+nav {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover, .active {
+  text-decoration: underline;
 }
 h1 {
-    color: #fff;
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 25px;
-    font-size: 2.5em;
-    font-weight: 700;
-    letetr-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba (0,0,0,0.1);
+  text-align: center;
+  margin-top: 20px;
 }
-table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #fff;
-    border: 4px solid #8e2de2;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba (0,0,0,0.15);
-    animation: fadeIn 1.2s ease;
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
-th {
-    background-color: #1976d2;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 14px;
-    font-size: 14px;
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
 }
-td {
-    padding: 12px;
-    border: 1px solid #8e2de2;
-    color: #333;
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
-tr:nth-child(even) {
-    background-color: #f3f7;
+button, a.view {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
 }
-tr:nth-child(odd) {
-    background: #fff;
-}
-tr hover {
-    background-color: #ffe0f0;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
-@media (max-width: 700px) {
-    table {
-        width: 100;
-        font-size: 12px;
-    }
-    th, td {
-        padding: 8px;
-    }
-    h1 {
-        font-size:1.8em;
-    }
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
